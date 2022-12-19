@@ -43,8 +43,8 @@ export const Contact = () => {
     };
 
     return (
-        <section className="w-full h-[100vh] bg-[#031926] flex justify-center items-center">
-            <div className="w-[50%] p-8 flex justify-center">
+        <section className=" w-full h-[100vh] bg-[rgba(0,0,0,0.95)] flex justify-center items-center">
+            <div className=" w-[50%] p-8 flex justify-center">
                 <form ref={form} className="w-[80%] mx-auto" onSubmit={sendEmail}>
                     <label className="text-slate-200 capitalize font-bold">
                         name

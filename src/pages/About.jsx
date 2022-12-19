@@ -18,8 +18,8 @@ export const About = () => {
                 {
                     data.profession.map((profession, index) => {
                         return (
-                            <div key={index} className="shadow-md w-[60%] mx-auto p-2 mb-4 border-2 profession">
-                                <p className="text-2xl text-slate-200 font-bold text-center">{profession.name}</p>
+                            <div key={index} className="z-50 shadow-md w-[60%] mx-auto p-2 mb-4 border-2 profession">
+                                <p className="text-2xl text-slate-200 font-bold text-center capitalize">{profession.name}</p>
                                 <p className="capitalize text-slate-400 font-bold italic">{profession.school}</p>
                                 <p className="capitalize text-slate-500 font-bold italic">{profession.date}</p>
                             </div>
