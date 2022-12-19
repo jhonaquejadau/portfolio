@@ -66,3 +66,149 @@
   text-shadow:  20px 20px 60px #cb6f47,
              -20px -20px 60px #ff9761;
 }
+
+/*  STYLING BUTTONS
+Style got it from uiverse.io
+*/
+
+.btn {
+  transform: rotate(-15deg) skew(15deg);
+  transform-style: preserve-3d;
+  position: relative;
+  list-style: none;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin: 0px 20px;
+  background: transparent;
+  font-family: inherit;
+ }
+ 
+ .btn:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  background: #EF8354;
+  transform: skewX(-41deg);
+ }
+ 
+ .btn:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: #EF8354;
+  transform: skewY(-49deg);
+ }
+ 
+ .btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #EF8354;
+  color: #fff;
+  font-size: 25px;
+  transition: 1.1s ease-out;
+ }
+ 
+ .btn:hover span {
+  z-index: 1000;
+  transition: .3s;
+  color: #fff;
+ }
+ 
+ .btn:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+ }
+ 
+ .btn:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: .8;
+ }
+ 
+ .btn:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: .6;
+ }
+ 
+ .btn:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: .4;
+ }
+ 
+ .btn:hover span:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: .2;
+ }
+ 
+ .btn:active span:nth-child(5) {
+  transform: translate(20px, -20px);
+  opacity: 1;
+ }
+ 
+ .btn:active span:nth-child(4) {
+  transform: translate(15px, -15px);
+ }
+ 
+ .btn:active span:nth-child(3) {
+  transform: translate(10px, -10px);
+ }
+ 
+ .btn:active span:nth-child(2) {
+  transform: translate(5px, -5px);
+ }
+ 
+ .btn:active span:nth-child(1) {
+  transform: translate(0px, 0px);
+ }
+ 
+ .btn:nth-child(1):hover span {
+  background: whitesmoke;
+  color: #EF8354;
+ }
+
+ .btn:nth-child(2):hover span {
+  background: whitesmoke;
+  color: #EF8354;
+ }
+
+ .profession {
+  perspective: 1000px;
+  padding: 1em 1em;
+  outline: none;
+  letter-spacing: 4px;
+  color: #fff;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+ }
+
+ .profession:hover {
+  transform: rotateX(30deg) rotateZ(0);
+ }
+ 
+ /*STYLING TEXT*/
+
+ .glowing:hover {
+   color: #EF8354;
+ }
+ .glowing2:hover {
+   color: whitesmoke;
+ }
+ .glowing:hover, .glowing2:hover {
+  text-shadow:0px 0px 30px #EF8354;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+ 
