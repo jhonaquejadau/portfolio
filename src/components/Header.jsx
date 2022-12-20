@@ -59,7 +59,7 @@ export default function Header () {
             <nav 
                 onMouseOver={handleShowMenu} 
                 onMouseOut={handleHideMenu} 
-                className={`${showNav ? 'block' : 'hidden'} ${!showMenu ? 'h-[30vh] ' : 'h-[50vh]'} transition-all z-50 fixed top-1/4 w-fit bg-[rgba(0,0,0,0.5)] ml-2 min-[1000px]:block`}
+                className={` ${!showMenu ? 'h-[30vh] ' : 'h-[50vh]'} transition-all z-50 fixed top-1/4 w-fit bg-[rgba(0,0,0,0.5)] ml-2 min-[1000px]:block`}
             >
                 {!showMenu ?
                 <div className="h-full flex justify-center items-center">

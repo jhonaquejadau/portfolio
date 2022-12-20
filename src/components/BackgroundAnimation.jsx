@@ -3,7 +3,7 @@
 import React from 'react';
 
 const BackgroundAnimation = () => (
-  <div className='absolute z-10 w-[800px] rotate-45 top-0'>
+  <div className='absolute z-10 w-[650px] rotate-45 top-10 max-[1600px]:w-[700px] max-[900px]:w-[500px] max-[600px]:w-[300px] max-[900px]:top-[10em]'>
     <svg
       className="bg-[rgba(0,0,0,0.8)] border-2 border-[rgba(255,255,255,0.2)] rounded"
       viewBox="0 0 602 602"

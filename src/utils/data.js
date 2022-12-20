@@ -31,10 +31,10 @@ export const data = {
         {name:'git', img: git}
     ],
     projects: [
-        { name: 'pokedex app', img: pokedex, source: "https://jhonaquejadau.github.io/pokedex-app/" },
-        { name: 'movies app', img: movies, source: "https://jhonaquejadau.github.io/movies-app/"},
-        { name: 'quizzical game', img: quizzical, source: "https://jhonaquejadau.github.io/quizzical-app/" },
-        { name: 'character game', img: character, source: "https://jhonaquejadau.github.io/CharacterVS/" }
+        { name: 'pokedex app', img: pokedex, source: "https://jhonaquejadau.github.io/pokedex-app/", description:"Fan version pokedex, where you can find information about a lot of pokemons with stats, abilities, evolutions, and more.", url:"https://jhonaquejadau.github.io/pokedex-app/", technologies:['Html', 'Css', 'JavaScript', 'React Js', 'Tailwind', 'Context API'], api:{name:"PokeApi", url:"https://pokeapi.co/"} },
+        { name: 'movies app', img: movies, source: "https://jhonaquejadau.github.io/movies-app/", description:"Movies information app, where you can find information about a bunch of movies and series, with credits, similar movises, recommendations, trialer videos, and more.", url:"https://jhonaquejadau.github.io/movies-app/", technologies:['Html', 'Css', 'JavaScript', 'React Js', 'Tailwind'], api:{name:"The Movie Database Api (TMDB)", url:"https://www.themoviedb.org/documentation/api"}},
+        { name: 'quizzical game', img: quizzical, source: "https://jhonaquejadau.github.io/quizzical-app/", description:"Quiz game to test your brain, where you can select categories of the questions, and get a result once you end the game.", url:"https://jhonaquejadau.github.io/quizzical-app/", technologies:['Html', 'Css', 'JavaScript', 'Tailwind'], api:{name:"Open Trivia Api", url:"https://opentdb.com/"} },
+        { name: 'character game', img: character, source: "https://jhonaquejadau.github.io/CharacterVS/", description:"Wizzard vs Orc game where you can roll a dice to get damage number to attack your oponent. Be the wizzard you always wold be and win the game!!", url:"https://jhonaquejadau.github.io/CharacterVS/", technologies:['Html', 'Css', 'JavaScript', 'Tailwind'], api:{name:"Scrimba Project", url:"https://scrimba.com/learn/frontend"} }
     ],
     gmail: {name: 'gmail', logo:gmail},
     social: [
