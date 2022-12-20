@@ -9,7 +9,7 @@ export const Home = () => {
     return (
         <div>
             <BackgroundAnimation/>
-            <section className="relative flex flex-row justify-center items-center bg-[rgba(0,0,0,0.95)] w-full h-[100vh]">
+            <section className=" flex flex-row justify-center items-center bg-[rgba(0,0,0,0.95)] w-full h-[100vh]">
                 <p className="z-20 left-0 text-[40px] italic text-[#2D3142] rotate-90 font-[300] glowing max-[700px]:hidden">{`<Jaqudev/>`}</p>
                 <div className="z-20 p-6 text-[#2D3142]">
                     <p className="italic text-[#2D3142]">{`<section>`}</p>
@@ -41,10 +41,10 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
-            {/* <About></About>
+            <About></About>
             <Skills></Skills>
             <Projects></Projects>
-            <Contact></Contact> */}
+            <Contact></Contact>
         </div>
     )
 }

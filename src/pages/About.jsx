@@ -4,9 +4,12 @@ import phototwo from "../assets/phototwo.jpg"
 
 export const About = () => {
     return (
-        <section className="w-full h-[100vh] relative flex flex-row items-center ">
-            <img className="z-10 absolute w-[50%] h-full object-cover object-[center_-200px] shadow rounded-2xl" src={phototwo} alt="back" />
-            <div className="absolute flex flex-col justify-center w-[50%] h-[100vh] right-0 bg-[rgba(0,0,0,0.95)] h-[100vh] p-4">
+        <section className="w-full h-full items-center xl:flex xl:flex-row">
+            <img className="z-10 w-[50%] h-full object-cover object-[center_-200px] shadow hidden xl:block" src={phototwo} alt="back" />
+            <div className=" right-0 flex flex-col justify-center h-full bg-[rgba(0,0,0,0.95)] xl:p-4 xl:w-[50%]">
+                <div className="w-full h-[500px] xl:hidden rounded-br-[5em]">
+                    <img className="w-full h-full object-cover object-[center_-400px] rounded-br-[5em]" src={phototwo} alt="back" />
+                </div>
                 <p className="italic text-[#2D3142]">{`<h1>`}</p>
                 <p className="text-[4rem] font-[800] text-slate-300 capitalize text-center glowing">who am i...</p>
                 <p className="italic text-[#2D3142] text-right">{`</h1>`}</p>

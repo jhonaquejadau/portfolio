@@ -3,7 +3,7 @@ import { data } from "../utils/data";
 
 export const Skills = () => {
     return (
-        <section className="w-full h-[100vh] flex flex-row relative bg-[rgba(0,0,0,0.95)] p-6 max-[900px]:flex-col">
+        <section className="w-full h-full flex flex-row bg-[rgba(0,0,0,0.95)] p-6 max-[900px]:flex-col">
             <div className="w-[50%] p-8 flex flex-col justify-center max-[900px]:w-full">
             <p className="italic text-[#2D3142]">{`<h1>`}</p>
             <p className="text-[5rem] text-slate-300 font-bold capitalize glowing">my skills</p>
