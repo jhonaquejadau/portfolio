@@ -23,8 +23,8 @@ export const Home = () => {
                     <p className="font-bold text-5xl capitalize"><span className="glowing">mechatronic engineer</span> | <span className="glowing2">react developer</span></p>
                     <p className="italic text-[#2D3142] text-right">{`<h2/>`}</p>
                     <p className="italic text-[#2D3142]">{`<section />`}</p>
-                    <div className="mt-4 flex justify-center items-center max-[530px]:flex-col">
-                        <button className="btn max-[530px]:mb-[2em]">
+                    <div className="mt-4 flex justify-center items-center max-[600px]:flex-col">
+                        <button className="btn max-[600px]:mb-[2em]">
                             <span></span>
                             <span></span>
                             <span></span>

@@ -18,13 +18,13 @@ export const Projects = () => {
     return (
         <section className="w-full h-full bg-[rgba(0,0,0,0.95)]">
             <div className=" w-full h-full text-slate-300 p-[2em]">
-                <p className="text-[#2D3142]">{`<p>`}</p>
+                <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-[4rem] font-bold capitalize">projects</p>
-                <p className="text-[#2D3142]">{`</p>`}</p>
-                <div className="w-full h-full">
+                <p className="text-[#2D3142] italic">{`</p>`}</p>
+                <div className="w-full h-full justify-center items-center border-2">
                     <Swiper
                         slidesPerView={3}
-                        spaceBetween={30}
+                        spaceBetween={10}
                         slidesPerGroup={3}
                         loop={true}
                         loopFillGroupWithBlank={true}
@@ -33,7 +33,6 @@ export const Projects = () => {
                         }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
-                        className="mySwiper"
                     >
                         {
                             data.projects.map((project,index) => {

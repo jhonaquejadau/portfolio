@@ -86,19 +86,25 @@ export const Contact = () => {
                             onChange={handleFormData}/>
                     </label>
                     <button 
-                        className="w-full py-2 px-[15em] bg-[rgba(0,0,0,0.3)] border-2 text-slate-200 capitalize hover:bg-slate-200 hover:text-[#031926] font-bold "
+                        className="w-full py-2 rounded border-2 text-slate-300 capitalize hover:bg-slate-200 hover:text-[#031926] font-bold "
                         type="submit"    
                     >
                         contact me
                     </button>
                 </form>
             </div>
-            <div className="w-full xl:w-[50%] flex flex-col justify-center items-center order-1">
-                <p className="text-slate-200 text-[5rem] capitalize">contact</p>
+            <div className="w-full xl:w-[50%] flex flex-col justify-center order-1">
+                <p className="text-[#2D3142] italic">{`<p>`}</p>
+                <p className="text-slate-300 font-bold text-[4rem] capitalize text-center glowing">contact</p>
+                <p className="text-[#2D3142] text-right mb-4 italic">{`</p>`}</p>
+                <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-xl text-slate-400 font-bold">Did you like my profile?</p>
+                <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
+                <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-slate-500 text-2xl w-[80%]">{data.interest}</p>
-                <div className="flex flex-row items-center w-fit mt-6">
-                    <div className="w-[50px] h-[50px] mx-4 hover:scale-[1.1]">        
+                <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
+                <div className="flex flex-row justify-center items-center w-full ">
+                    <div className="w-[50px] h-[50px] mx-4 hover:scale-[1.1] mt-4">        
                         <a href="mailto:jhona.quejada@gmail.com">
                             <img src={data.gmail.logo} alt={data.gmail.name} />
                         </a>
@@ -106,7 +112,7 @@ export const Contact = () => {
                     {
                         data.social.map((social,index) => {
                             return (
-                                <div key={index} className="flex flex-col justify-center items-center w-[50px] h-[50px] mx-4 hover:scale-[1.1]">
+                                <div key={index} className="flex flex-col justify-center items-center w-[50px] h-[50px] mx-4 hover:scale-[1.1] mt-4">
                                     <a href={social.source} target="_blank" rel="noreferrer">
                                     <img src={social.logo} alt={social.name} />
                                     </a>
