@@ -19,27 +19,37 @@ export const Projects = () => {
         <section className="w-full h-full bg-[rgba(0,0,0,0.95)]">
             <div className=" w-full h-full text-slate-300 p-[2em]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-[4rem] font-bold capitalize">projects</p>
-                <p className="text-[#2D3142] italic">{`</p>`}</p>
-                <div className="w-full h-full justify-center items-center border-2">
+                <p className="text-[4rem] font-bold capitalize text-center">projects</p>
+                <p className="text-[#2D3142] italic text-right">{`</p>`}</p>
+                <div className="w-full h-full justify-center items-center">
                     <Swiper
-                        slidesPerView={3}
+                        // slidesPerView={3}
+                        centeredSlides={true}
                         spaceBetween={10}
-                        slidesPerGroup={3}
                         loop={true}
                         loopFillGroupWithBlank={true}
                         pagination={{
-                        clickable: true,
+                            clickable: true,
                         }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
+                        breakpoints={{
+                            1400: {
+                                slidesPerView:1,
+                                slidesPerGroup:1
+                            },
+                            1700: {
+                                slidesPerView:3,
+                                slidesPerGroup:3
+                            }
+                        }}
                     >
                         {
                             data.projects.map((project,index) => {
                                 return (
                                     <SwiperSlide>
 
-                                        <div className="w-[500px] h-full mb-[2em]">
+                                        <div className="w-full h-full mb-[2em] p-6">
                                             <p className="text-[#2D3142]">{`<div>`}</p>
                                             <div key={index} 
                                                 className="w-full h-full text-xl rounded-xl text-center  bg-[rgba(255,255,255,0.05)] hover:scale-[1.02]"
