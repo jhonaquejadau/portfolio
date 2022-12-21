@@ -34,11 +34,8 @@ export const Projects = () => {
                         navigation={true}
                         modules={[Pagination, Navigation]}
                         breakpoints={{
-                            1400: {
-                                slidesPerView:1,
-                                slidesPerGroup:1
-                            },
-                            1700: {
+                            
+                            1200: {
                                 slidesPerView:3,
                                 slidesPerGroup:3
                             }
