@@ -6,7 +6,7 @@ export const Skills = () => {
         <section className="w-full h-full flex flex-row bg-[rgba(0,0,0,0.95)] p-6 max-[900px]:flex-col">
             <div className="w-[50%] p-8 flex flex-col justify-center max-[900px]:w-full">
                 <p className="italic text-[#2D3142]">{`<h1>`}</p>
-                <p className="text-[4rem] text-slate-300 font-bold capitalize glowing text-center">my skills</p>
+                <p className="text-[4rem] text-slate-300 font-bold capitalize glowing text-center max-[400px]:text-[3rem]">my skills</p>
                 <p className="italic text-[#2D3142] text-right">{`</h1>`}</p>
                 <p className="italic text-[#2D3142]">{`<p>`}</p>
                 <p className="text-slate-400">{data.skillDesciption}</p>

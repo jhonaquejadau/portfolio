@@ -19,7 +19,7 @@ export const Projects = () => {
         <section className="w-full h-full bg-[rgba(0,0,0,0.95)]">
             <div className=" w-full h-full text-slate-300 p-[2em]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-[4rem] font-bold capitalize text-center">projects</p>
+                <p className="text-[4rem] font-bold capitalize text-center max-[400px]:text-[3rem]">projects</p>
                 <p className="text-[#2D3142] italic text-right">{`</p>`}</p>
                 <div className="w-full h-full justify-center items-center">
                     <Swiper

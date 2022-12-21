@@ -93,15 +93,15 @@ export const Contact = () => {
                     </button>
                 </form>
             </div>
-            <div className="w-full xl:w-[50%] flex flex-col justify-center order-1">
+            <div className="w-full flex flex-col justify-center order-1 xl:w-[50%]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-slate-300 font-bold text-[4rem] capitalize text-center glowing">contact</p>
-                <p className="text-[#2D3142] text-right mb-4 italic">{`</p>`}</p>
-                <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-xl text-slate-400 font-bold">Did you like my profile?</p>
+                <p className="text-slate-300 font-bold text-[4rem] capitalize text-center glowing max-[400px]:text-[3rem]">contact</p>
                 <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-slate-500 text-2xl w-[80%]">{data.interest}</p>
+                <p className="text-2xl text-slate-400 font-bold text-center">Did you like my profile?</p>
+                <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
+                <p className="text-[#2D3142] italic">{`<p>`}</p>
+                <p className="text-slate-500 text-3xl text-center px-[2em] max-[400px]:text-lg ">{data.interest}</p>
                 <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
                 <div className="flex flex-row justify-center items-center w-full ">
                     <div className="w-[50px] h-[50px] mx-4 hover:scale-[1.1] mt-4">        

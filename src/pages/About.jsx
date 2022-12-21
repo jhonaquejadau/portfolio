@@ -9,11 +9,11 @@ export const About = () => {
                 <img className="z-10 w-full h-full object-cover rounded-br-[5em] rounded-tl-[5em]" src={phototwo} alt="back" />
             </div>
             <div className="flex flex-col justify-center bg-[rgba(0,0,0,0.95)] xl:p-4 xl:w-[50%] xl:h-[900px]">
-                <div className="w-full h-[500px] xl:hidden rounded-br-[5em]">
-                    <img className="w-full h-full object-cover object-[center_-400px] rounded-br-[5em] max-[700px]:object-[center_-200px]" src={phototwo} alt="back" />
+                <div className="w-full h-[500px] max-[400px]:h-[200px] xl:hidden rounded-br-[5em]">
+                    <img className="w-full h-full object-cover object-[center_-400px] rounded-br-[5em] max-[400px]:rounded-br-[2em] max-[400px]:rounded-tl-[2em] max-[700px]:object-[center_-200px]" src={phototwo} alt="back" />
                 </div>
                 <p className="italic text-[#2D3142] italic">{`<h1>`}</p>
-                <p className="text-[4rem] font-[800] text-slate-300 capitalize text-center glowing">who am i...</p>
+                <p className="text-[4rem] font-[800] text-slate-300 capitalize text-center glowing max-[400px]:text-[2.75rem]">who am i...</p>
                 <p className="italic text-[#2D3142] text-right italic">{`</h1>`}</p>
                 <p className="italic text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-slate-300"></p>
