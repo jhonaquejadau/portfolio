@@ -4,7 +4,7 @@ import phototwo from "../assets/phototwo.jpg"
 
 export const About = () => {
     return (
-        <section className="w-full h-full items-center xl:flex xl:flex-row">
+        <section id="about" className="w-full h-full items-center xl:flex xl:flex-row">
             <div className="hidden xl:w-[50%] xl:block xl:h-[900px] bg-[rgba(0,0,0,0.95)]">
                 <img className="z-10 w-full h-full object-cover rounded-br-[5em] rounded-tl-[5em]" src={phototwo} alt="back" />
             </div>

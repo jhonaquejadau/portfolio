@@ -16,7 +16,7 @@ import { Pagination, Navigation } from "swiper";
 
 export const Projects = () => {
     return (
-        <section className="w-full h-full bg-[rgba(0,0,0,0.95)]">
+        <section id="projects" className="w-full h-full bg-[rgba(0,0,0,0.95)]">
             <div className=" w-full h-full text-slate-300 p-[2em]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-[4rem] font-bold capitalize text-center max-[400px]:text-[3rem]">projects</p>

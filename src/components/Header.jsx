@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import {Link } from "react-router-dom"
 import {AiOutlineMenu} from "react-icons/ai"
 import {AiOutlineClose} from "react-icons/ai"
 
@@ -51,9 +50,7 @@ export default function Header () {
             </div>
         
             <div className="z-50 fixed flex justify-center items-center w-full">
-                <Link to="/">
-                    <p onClick={handleScrollUp} className="text-[1.75rem] italic text-slate-200 font-[100] capitalize font-bold cursor-pointer glowing ">{`() => {jaqudev_}`}</p>
-                </Link>
+                <p onClick={handleScrollUp} className="text-[1.75rem] italic text-slate-200 font-[100] capitalize font-bold cursor-pointer glowing ">{`() => {jaqudev_}`}</p>
             </div>
 
             <nav 
@@ -67,26 +64,24 @@ export default function Header () {
                 </div> 
                 :             
                     <ul className="w-full h-full flex flex-col justify-evenly items-center">
-                        <Link to="/">
-                        <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>{`<Home/>`}</li>
-                        </Link>
+                            <a href="#home">
+                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>{`<Home/>`}</li>
+                            </a>
 
-                        <Link to="/about">
-                        <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>About</li>
+                            <a href="#about">
+                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>About</li>
+                            </a>
                         
-                        </Link>
-                        <Link to="/skills">
-                        <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Skills</li>
+                            <a href="#skills">
+                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Skills</li>
+                            </a>
+                            <a href="#projects">
+                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Projects</li>
+                            </a>
+                            <a href="#contact">
+                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Contact</li>
+                            </a>
                         
-                        </Link>
-                        <Link to="projects">
-                        <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Projects</li>
-                        
-                        </Link>
-                        <Link to="contact">
-                        <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Contact</li>
-                        
-                        </Link>
                     </ul>}
             </nav>
         </header>
