@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Projects = () => {
     return (
-        <section id="projects" className="w-full h-full bg-[#080916]">
+        <section id="projects" className="w-full h-[100vh] bg-[#080916]">
             <Background />
             <div className=" w-full h-full text-slate-300 p-[2em]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>

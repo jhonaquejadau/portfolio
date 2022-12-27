@@ -5,7 +5,7 @@ import { Background } from "../components/background/Background";
 
 export const About = () => {
     return (
-        <section className="w-full h-full items-center xl:flex xl:flex-row bg-[#080916]">
+        <section className="w-full h-[100vh] items-center xl:flex xl:flex-row bg-[#080916]">
             <Background />
             <div className="hidden xl:w-[50%] xl:block xl:h-[900px] z-40">
                 <img className="w-full h-full object-cover rounded-full rounded-tl-[1em]" src={phototwo} alt="back" />
