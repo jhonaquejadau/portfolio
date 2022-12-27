@@ -1,22 +1,19 @@
 import React from "react";
 import { data } from "../utils/data";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Background } from "../components/background/Background";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import "./styles.css";
-
-// import required modules
 import { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 
 export const Projects = () => {
     return (
-        <section id="projects" className="w-full h-full bg-[rgba(0,0,0,0.95)]">
+        <section id="projects" className="w-full h-full bg-[#080916]">
+            <Background />
             <div className=" w-full h-full text-slate-300 p-[2em]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-[4rem] font-bold capitalize text-center max-[400px]:text-[3rem]">projects</p>
@@ -46,7 +43,7 @@ export const Projects = () => {
                                 return (
                                     <SwiperSlide>
 
-                                        <div className="w-full h-full mb-[2em] p-6">
+                                        <div key={index} className="w-full h-full mb-[2em] p-6">
                                             <p className="text-[#2D3142]">{`<div>`}</p>
                                             <div key={index} 
                                                 className="w-full h-full text-xl rounded-xl text-center  bg-[rgba(255,255,255,0.05)] hover:scale-[1.02]"

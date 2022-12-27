@@ -1,37 +1,23 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import {AiOutlineMenu} from "react-icons/ai"
-import {AiOutlineClose} from "react-icons/ai"
+import {React, useEffect, useState} from "react";
+import {Link} from "react-router-dom"
+
+import {AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineContacts} from "react-icons/ai"
 
 export default function Header () {
 
     const [showNav, setShowNav] = useState(false);
-    const [showMenu, setShowMenu] = useState(false); 
-    const [hover , setHover] = useState(false);
+    const [scrollNav , setScrollNav] = useState(false);
 
     const handleShowNav = () => {
         setShowNav(prev => !prev)
     }
 
-    const handleHiddeNav = () => {
-        setShowNav(false)
-    }
-
     const handleChange = () => {
-        if (window.scrollY > 800){
-            setHover(true)
+        if (window.scrollY > 400){
+            setScrollNav(true)
         } else {
-            setHover(false)
+            setScrollNav(false)
         }
-    }
-
-    const handleShowMenu = () => {
-        setShowMenu(true)
-    }
-
-    const handleHideMenu = () => {
-        setShowMenu(false)
     }
 
     const handleScrollUp = () => {
@@ -44,45 +30,42 @@ export default function Header () {
     }, [])
 
     return (
-        <header className={`${hover ? 'bg-[rgba(0,0,0,0.7)]' : 'bg-transparent'} ${showNav ? 'bg-[#4F5D75] inset-0 flex justify-center items-center' : 'bg-transparent'} m-0`} >
+        <header className={`${scrollNav ? 'bg-[rgba(0,0,0,0.9)]' : 'bg-transparent'} fixed w-full top-0 z-50`} >
             <div onClick={handleShowNav} className="absolute right-5 top-5  min-[1000px]:hidden text-slate-200 text-2xl ">
                 {!showNav ? <AiOutlineMenu /> : <AiOutlineClose /> } 
             </div>
-        
-            <div className="z-50 fixed flex justify-center items-center w-full">
-                <p onClick={handleScrollUp} className="text-[1.75rem] italic text-slate-200 font-[100] capitalize font-bold cursor-pointer glowing ">{`() => {jaqudev_}`}</p>
-            </div>
 
             <nav 
-                onMouseOver={handleShowMenu} 
-                onMouseOut={handleHideMenu} 
-                className={` ${!showMenu ? 'h-[30vh] ' : 'h-[50vh]'} transition-all z-50 fixed top-1/4 w-fit bg-[rgba(0,0,0,0.5)] ml-2 min-[1000px]:block`}
+                className={`flex flex-row justify-center items-center bg-transparent w-full px-[12em]`}
             >
-                {!showMenu ?
-                <div className="h-full flex justify-center items-center">
-                    <p className="capitalize text-[1.5rem] text-slate-300 rotate-[270deg] glowing">menu</p> 
-                </div> 
-                :             
-                    <ul className="w-full h-full flex flex-col justify-evenly items-center">
-                            <a href="#home">
-                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>{`<Home/>`}</li>
-                            </a>
+                <p onClick={handleScrollUp} className="italic text-[2.5rem] text-purple-800 font-[900] cursor-pointer uppercase hover:text-white mr-auto">{`jq.`}</p>
 
-                            <a href="#about">
-                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>About</li>
-                            </a>
-                        
-                            <a href="#skills">
-                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Skills</li>
-                            </a>
-                            <a href="#projects">
-                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Projects</li>
-                            </a>
-                            <a href="#contact">
-                                <li onClick={handleHiddeNav} className={`${showNav ? 'text-3xl my-4' : ''} hover:border-b hover:border-orange-500 font-[400]  text-slate-200`}>Contact</li>
-                            </a>
-                        
-                    </ul>}
+                <ul className="flex flex-row justify-center items-center gap-8 text-[1.75rem] text-white font-[500] capitalize">
+                    <Link to="/">
+                    <li className="flex flex-row justify-center border-b-[2px] border-purple-900 hover:text-purple-800">
+                        <AiOutlineHome className="w-[40px]"/>
+                        home
+                    </li>
+                    </Link>
+                    <Link to="/about">
+                    <li className="flex flex-row justify-center hover:border-b-[2px] hover:border-purple-900 ">
+                        <AiOutlineUser className="w-[40px]"/>
+                        about
+                    </li>
+                    </Link>
+                    <Link to="/projects">
+                    <li className="flex flex-row justify-center hover:border-b-[2px] hover:border-purple-900 ">
+                        <AiOutlineFundProjectionScreen className="w-[40px]"/>
+                        projects
+                    </li>
+                    </Link>
+                    <Link to="/resume">
+                    <li className="flex flex-row justify-center hover:border-b-[2px] hover:border-purple-900 ">
+                        <AiOutlineContacts className="w-[40px]"/>
+                        resume
+                    </li>
+                    </Link>
+                </ul>
             </nav>
         </header>
     )
