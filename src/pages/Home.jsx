@@ -35,7 +35,7 @@ export const Home = () => {
                     <p className="text-xl font-[300]">Right now, I'm looking for my first job as a <span className="text-purple-800 font-[600]">React Js Developer ...</span></p>
                     <p className="mt-[4em] xl:text-[2rem] w-[80%] mx-auto text-purple-800 font-[600]">If you feel awesome with my profile, just connect with me</p>
                 </div>
-                <img className="animate-[spin_80s_ease] w-[300px] xl:w-[700px] h-full border-2" src={logo} alt={logo} />
+                <img className="animate-[spin_80s_ease] w-[300px] xl:w-[700px] h-full" src={logo} alt={logo} />
             </section>
             <section>
                 <Contact />
