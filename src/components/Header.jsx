@@ -35,7 +35,9 @@ export default function Header () {
 
     return (
         <header className={`${scrollNav ? 'bg-[rgba(0,0,0,0.9)]' : 'bg-transparent'} fixed top-0 z-50 flex flex-row items-center w-full px-[4em] xl:px-[12em]`} >
-            <p onClick={handleScrollUp} className="italic text-[2.5rem] text-purple-800 font-[900] cursor-pointer uppercase hover:text-white mr-auto">{`jq.`}</p>
+            <Link to="/">
+                <p onClick={handleScrollUp} className="italic text-[2.5rem] text-purple-800 font-[900] cursor-pointer uppercase hover:text-white mr-auto">{`jq.`}</p>
+            </Link>
             
             <div onClick={handleShowNav} className="absolute z-20 right-12 min-[1000px]:hidden text-slate-200 text-[2em] order-3">
                 {!showNav ? <AiOutlineMenu /> : <AiOutlineClose /> } 
