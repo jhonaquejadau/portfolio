@@ -5,7 +5,7 @@ import {AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiOutlineUser, AiOutlineFu
 
 export default function Header () {
 
-    const [showNav, setShowNav] = useState(true);
+    const [showNav, setShowNav] = useState(false);
     const [scrollNav , setScrollNav] = useState(false);
 
     const handleShowNav = () => {
