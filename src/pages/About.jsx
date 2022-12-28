@@ -41,7 +41,7 @@ export const About = () => {
             </div>
             <div className="w-full h-full text-white text-[3rem]">
                 <p className=" capitalize text-center">{`<professional skills/>`}</p>
-                <div className="grid grid-cols-5 gap-10 w-full h-full px-[2em]">
+                <div className="grid grid-cols-5 gap-10 w-full h-full px-[2em] max-[1000px]:grid-cols-4 max-[700px]:grid-cols-2 max-[400px]:grid-cols-1">
                     {data.skills.map((data, index) => {
                         return (
                             <div key={index} className="flex justify-center items-center rounded-xl border-2 border-purple-800 p-4 z-50 hover:scale-[1.02]">
@@ -51,7 +51,7 @@ export const About = () => {
                     })}
                 </div>
                 <p className=" text-center mt-4 font-[300]"><span className="text-purple-800 font-[500]">{`const`} </span>tools {`= {used: [windows, vscode, figma]}`}</p>
-                <div className="grid grid-cols-3 gap-10 w-full h-full px-[2em] mb-[2em]">
+                <div className="grid grid-cols-3 gap-10 w-full h-full px-[2em] mb-[2em] max-[700px]:grid-cols-1">
                     {data.tools.map((data, index) => {
                         return (
                             <div key={index} className="flex justify-center items-center rounded-xl border-2 border-purple-800 p-4 z-50 hover:scale-[1.02]">
