@@ -11,6 +11,24 @@ html, body {
   font-family: 'League Spartan', sans-serif;
 }
 
+/*STYLING SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #080916;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: purple; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: purple; 
+}
+
 /*STYLING BACKGROUND
 Source: https://wweb.dev/resources/animated-css-background-generator/
 */
