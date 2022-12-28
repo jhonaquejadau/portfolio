@@ -27,15 +27,15 @@ export const Home = () => {
                     <p className="italic text-[#2D3142]">{`<section />`}</p>
                 </div>
             </section>
-            <section className="bg-[#080916] flex flex-col justify-center items-center min-[1800px]:flex-row">
+            <section className="bg-[#080916] flex flex-col justify-center items-center px-[4em] min-[1400px]:flex-row">
                 <div className="h-full uppercase text-white text-center">
                     <p className="text-[4rem] text-white text-center">let me <span className="text-purple-800">introduce</span> myself</p>
                     <p className="text-xl font-[300]">I'm mechatronic engineer, but I completely fell in love with programming...</p>
                     <p className="text-xl font-[300]">Enjoying make code in languages like <span className="text-purple-800 font-[600]">JavaScript</span> and little of <span className="text-purple-800 font-[600]">Python</span> </p>
                     <p className="text-xl font-[300]">Right now, I'm looking for my first job as a <span className="text-purple-800 font-[600]">React Js Developer ...</span></p>
-                    <p className="mt-[4em] xl:text-[2rem] w-[80%] mx-auto text-purple-800 font-[600]">If you feel awesome with my profile, just connect with me</p>
+                    <p className=" w-[80%] mx-auto text-purple-800 font-[600] text-2xl mt-[2em] xl:text-3xl">If you feel awesome with my profile, just connect with me</p>
                 </div>
-                <img className="animate-[spin_80s_ease_infinite] w-[300px] xl:w-[700px] h-full" src={logo} alt={logo} />
+                <img className="animate-[spin_50s_ease_infinite] w-[300px] xl:w-[700px] h-full" src={logo} alt={logo} />
             </section>
             <section>
                 <Contact />
