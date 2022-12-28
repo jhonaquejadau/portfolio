@@ -1,12 +1,43 @@
 import logo from "../assets/logo.svg"
-import html from "../assets/html.svg"
-import css from "../assets/css.svg"
-import javascript from "../assets/javascript.svg"
-import tailwind from "../assets/tailwind.svg"
-import python from "../assets/python.svg"
-import git from "../assets/git.svg"
-import linkedin from "../assets/linkedin.svg"
+
+import react from "../assets/icons/react.svg"
+import reactWhite from "../assets/icons/react-white.svg"
+
+import html from "../assets/icons/html.svg"
+import htmlWhite from "../assets/icons/html-white.svg"
+
+import css from "../assets/icons/css.svg"
+import cssWhite from "../assets/icons/css-white.svg"
+
+import python from "../assets/icons/python.svg"
+import pythonWhite from "../assets/icons/python-white.svg"
+
+import javascript from "../assets/icons/javascript.svg"
+import javascriptWhite from "../assets/icons/javascript-white.svg"
+
+import git from "../assets/icons/git.svg"
+import gitWhite from "../assets/icons/git-white.svg"
+
+import nodejs from "../assets/icons/nodejs.svg"
+import nodejsWhite from "../assets/icons/nodejs-white.svg"
+
+import mongodb from "../assets/icons/mongodb.svg"
+import mongodbWhite from "../assets/icons/mongodb-white.svg"
+
+import tailwind from "../assets/icons/tailwind.svg"
+import tailwindWhite from "../assets/icons/tailwind-white.svg"
+
+import windows from "../assets/icons/windows.svg"
+import windowsWhite from "../assets/icons/windows-white.svg"
+
+import vscode from "../assets/icons/vscode.svg"
+import vscodeWhite from "../assets/icons/vscode-white.svg"
+
+import figma from "../assets/icons/figma.svg"
+import figmaWhite from "../assets/icons/figma-white.svg"
+
 import gmail from "../assets/gmail.svg"
+import linkedin from "../assets/linkedin.svg"
 import github from "../assets/github.svg"
 import twitter from "../assets/twitter.svg"
 
@@ -23,12 +54,21 @@ export const data = {
     interest:"I'm interested in any opportunity. If you feel right with my profile, don't hesitate to use the form.",
     mainSkill: {name:'react', img:logo},
     skills: [
-        {name:'html', img: html }, 
-        {name:'css', img: css}, 
-        {name:'tailwind', img: tailwind},  
-        {name:'javascript', img: javascript}, 
-        {name:'python', img: python},
-        {name:'git', img: git}
+        {name:'javascript', img: javascript, imgWhite: javascriptWhite},
+        {name:'python', img: python, imgWhite: pythonWhite},
+        {name:'nodejs', img: nodejs, imgWhite: nodejsWhite},
+        {name:'react', img: react, imgWhite: reactWhite},
+        {name:'mongoDB', img: mongodb, imgWhite: mongodbWhite},
+        {name:'git', img: git, imgWhite: gitWhite},
+        {name:'tailwind', img: tailwind, imgWhite: tailwindWhite},
+        {name:'html', img: html, imgWhite: htmlWhite},
+        {name:'css', img: css, imgWhite: cssWhite}
+
+    ],
+    tools:[
+        {name:'windows', img: windows, imgWhite:windowsWhite},
+        {name:'vscode', img: vscode, imgWhite:vscodeWhite},
+        {name:'figma', img: figma, imgWhite:figmaWhite}
     ],
     projects: [
         { name: 'pokedex app', img: pokedex, source: "https://jhonaquejadau.github.io/pokedex-app/", description:"Fan version pokedex, where you can find information about a lot of pokemons with stats, abilities, evolutions, and more.", url:"https://jhonaquejadau.github.io/pokedex-app/", technologies:['Html', 'Css', 'JavaScript', 'React Js', 'Tailwind', 'Context API'], api:{name:"PokeApi", url:"https://pokeapi.co/"} },

@@ -5,6 +5,8 @@ Feel like to see my projects and also give me back a like.
 
 Below you are going to find my social media...
 
+<img src="src/assets/home.PNG" alt="home"/>
+
 * [Linkedln](https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/)
 * [Github](https://github.com/jhonaquejadau)
 * [twitter](https://twitter.com/jaqudev_)

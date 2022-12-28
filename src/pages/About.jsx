@@ -45,7 +45,17 @@ export const About = () => {
                     {data.skills.map((data, index) => {
                         return (
                             <div key={index} className="flex justify-center items-center rounded-xl border-2 border-purple-800 p-4 z-50 hover:scale-[1.02]">
-                                <img className="w-[100px] h-[100px] " src={data.img} alt={data.name} />
+                                <img className="w-[50px] h-[50px] " src={data.imgWhite} alt={data.name} />
+                            </div>
+                        )
+                    })}
+                </div>
+                <p className=" text-center mt-4 font-[300]"><span className="text-purple-800 font-[500]">{`const`} </span>tools {`= {used: [windows, vscode, figma]}`}</p>
+                <div className="grid grid-cols-3 gap-10 w-full h-full px-[2em] mb-[2em]">
+                    {data.tools.map((data, index) => {
+                        return (
+                            <div key={index} className="flex justify-center items-center rounded-xl border-2 border-purple-800 p-4 z-50 hover:scale-[1.02]">
+                                <img className="w-[50px] h-[50px] " src={data.imgWhite} alt={data.name} />
                             </div>
                         )
                     })}

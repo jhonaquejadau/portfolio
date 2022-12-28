@@ -95,7 +95,7 @@ export const Contact = () => {
             </div>
             <div className="w-full flex flex-col justify-center order-1 xl:w-[50%]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-slate-300 font-bold text-[4rem] capitalize text-center glowing max-[400px]:text-[3rem]">contact</p>
+                <p className="text-slate-300 font-bold text-[3rem] capitalize text-center glowing ">{`<contact/>`}</p>
                 <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-2xl text-slate-400 font-bold text-center">Did you like my profile?</p>

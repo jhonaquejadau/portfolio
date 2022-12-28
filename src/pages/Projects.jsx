@@ -12,11 +12,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Projects = () => {
     return (
-        <section id="projects" className="w-full h-[100vh] bg-[#080916]">
+        <section id="projects" className="w-full h-full bg-[#080916]">
             <Background />
             <div className=" w-full h-full text-slate-300 p-[2em]">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-[4rem] font-bold capitalize text-center max-[400px]:text-[3rem]">projects</p>
+                <p className="text-[3rem] font-bold capitalize text-center max-[400px]:text-[3rem]">{`<projects/>`}</p>
                 <p className="text-[#2D3142] italic text-right">{`</p>`}</p>
                 <div className="w-full h-full justify-center items-center">
                     <Swiper
@@ -46,7 +46,7 @@ export const Projects = () => {
                                         <div key={index} className="w-full h-full mb-[2em] p-6">
                                             <p className="text-[#2D3142]">{`<div>`}</p>
                                             <div key={index} 
-                                                className="w-full h-full text-xl rounded-xl text-center  bg-[rgba(255,255,255,0.05)] hover:scale-[1.02]"
+                                                className="w-full h-full text-xl rounded-xl text-center border-2 border-purple-800 hover:scale-[1.02]"
                                             >
                                                 <a href={project.source} target="_blank" rel="noreferrer">
                                                     <img className="w-[full] rounded-tr-xl rounded-tl-xl" src={project.img} alt={project.name} />
