@@ -22,7 +22,7 @@ export const Home = () => {
                     <p className="text-[40px] italic text-[#2D3142] text-center text-orange-600 font-[300]">{`<Jaqudev/>`}</p>
                     <p className="italic text-[#2D3142] text-right">{`<h1/>`}</p>
                     <p className="italic text-[#2D3142]">{`<h2>`}</p>
-                    <p className="font-bold text-5xl text-center capitalize max-[400px]:text-3xl"><span className="glowing">mechatronic engineer</span> | <span className="glowing2">react developer</span></p>
+                    <p className="font-bold text-5xl text-center capitalize max-[400px]:text-3xl"><span className="glowing">mechatronic engineer</span> | <span className="glowing2">react js developer</span></p>
                     <p className="italic text-[#2D3142] text-right">{`<h2/>`}</p>
                     <p className="italic text-[#2D3142]">{`<section />`}</p>
                 </div>
@@ -35,7 +35,7 @@ export const Home = () => {
                     <p className="text-xl font-[300]">Right now, I'm looking for my first job as a <span className="text-purple-800 font-[600]">React Js Developer ...</span></p>
                     <p className="mt-[4em] xl:text-[2rem] w-[80%] mx-auto text-purple-800 font-[600]">If you feel awesome with my profile, just connect with me</p>
                 </div>
-                <img className="animate-[spin_80s_ease] w-[300px] xl:w-[700px] h-full" src={logo} alt={logo} />
+                <img className="animate-[spin_80s_ease_infinite] w-[300px] xl:w-[700px] h-full" src={logo} alt={logo} />
             </section>
             <section>
                 <Contact />
