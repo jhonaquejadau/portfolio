@@ -14,9 +14,11 @@ export const Projects = () => {
     return (
         <section id="projects" className="w-full h-full bg-[#080916]">
             <Background />
-            <div className=" w-full h-full text-slate-300 p-[2em]">
-                <p className="text-[#2D3142] italic">{`<p>`}</p>
+            <div className=" w-full h-full text-slate-300 p-[2em] border-2">
+                <p className="text-[#2D3142] italic mt-[2em]">{`<p>`}</p>
                 <p className="text-[3rem] font-bold capitalize text-center max-[400px]:text-[3rem]">{`<projects/>`}</p>
+                <p className="text-[1.75rem] text-center w-[80%] mx-auto font-[500] text-purple-800 italic">My most recents works</p>
+                <p className="text-[1.75rem] text-center w-[80%] mx-auto font-[200]">My most recents works. I'm trying to build projects as much as I can, so dont hesitate to leave a  like on my <span className="font-[600] text-purple-800">Github</span> repository</p>
                 <p className="text-[#2D3142] italic text-right">{`</p>`}</p>
                 <div className="w-full h-full justify-center items-center">
                     <Swiper
