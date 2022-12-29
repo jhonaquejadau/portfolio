@@ -8,7 +8,6 @@ import logo from "../assets/logo.svg"
 
 export const Home = () => {
     const {darkMode} = useContext(DarkModeConsumer);
-    console.log(darkMode)
 
     return (
         <div  className={`${darkMode ? 'bg-white' : 'bg-[#080916]'} w-full h-full `}>
