@@ -1,12 +1,15 @@
-import {React, useEffect, useState} from "react";
+import {React, useContext, useEffect, useState} from "react";
 import {Link} from "react-router-dom"
-
+import { Switch } from "./Switch";
 import {AiOutlineMenu, AiOutlineClose, AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineContacts} from "react-icons/ai"
 
+import { DarkModeConsumer } from "../context/DarkModeContext";
 export default function Header () {
 
+    const {darkMode} = useContext(DarkModeConsumer)
     const [showNav, setShowNav] = useState(false);
     const [scrollNav , setScrollNav] = useState(false);
+    
 
     const handleShowNav = () => {
         setShowNav(prev => !prev)
@@ -36,17 +39,18 @@ export default function Header () {
     return (
         <header className={`${scrollNav ? 'bg-[rgba(0,0,0,0.9)]' : 'bg-transparent'} fixed top-0 z-50 flex flex-row items-center w-full px-[4em] xl:px-[12em]`} >
             <Link to="/">
-                <p onClick={handleScrollUp} className="italic text-[2rem] text-purple-800 font-[900] cursor-pointer uppercase hover:text-white ">{`jq.`}</p>
+                <p onClick={handleScrollUp} className="italic text-[2rem] text-purple-800 font-[900] cursor-pointer uppercase hover:text-white mr-4">{`jq.`}</p>
             </Link>
+            <Switch></Switch>
             
             <div onClick={handleShowNav} className="absolute z-20 right-12 min-[1000px]:hidden text-slate-200 text-[2em] order-3">
                 {!showNav ? <AiOutlineMenu /> : <AiOutlineClose /> } 
             </div>
 
             <nav 
-                className={`${showNav ? 'block absolute top-0 left-0 right-0 -bottom-[30em] bg-purple-800 transition-all delay-100' : 'absolute -top-full'} bg-transparent ml-auto min-[1000px]:static`}
+                className={`${darkMode ? 'text-white' : 'text-[#080916]'} ${showNav ? 'block absolute top-0 left-0 right-0 -bottom-[30em] bg-purple-800 transition-all delay-100' : 'absolute -top-full'} bg-transparent ml-auto min-[1000px]:static`}
             >
-                <ul className={`${showNav ? 'flex-col h-full' : 'flex-row'} flex justify-center items-center gap-8 text-[1.5rem] text-white font-[500] capitalize`}>
+                <ul className={`${scrollNav && 'text-white'} ${showNav ? 'flex-col h-full' : 'flex-row'} flex justify-center items-center gap-8 text-[1.5rem] font-[500] capitalize`}>
                     <Link to="/">
                     <li onClick={handleHideNav} className="flex flex-row justify-center border-b-[2px] border-purple-900 hover:text-purple-800">
                         <AiOutlineHome className="w-[40px]"/>

@@ -1,10 +1,13 @@
 import {React, useState, useRef } from "react";
 import {data} from "../utils/data"
+import {DarkModeConsumer} from "../context/DarkModeContext"
 
 import emailjs from '@emailjs/browser';
+import { useContext } from "react";
 
 export const Contact = () => {
 
+    const {darkMode} = useContext(DarkModeConsumer)
     const [formData, setFormData] = useState({
         name:"",
         email:"",
@@ -43,10 +46,10 @@ export const Contact = () => {
     };
 
     return (
-        <section id="contact" className=" w-full h-full bg-[#080916] flex  flex-col justify-center items-center xl:p-[5em] xl:flex-row">
+        <section id="contact" className=" w-full h-full flex  flex-col justify-center items-center xl:p-[5em] xl:flex-row">
             <div className="w-full flex justify-center order-2 z-40 mb-[4em] xl:w-[60%] xl:mb-0">
                 <form ref={form} className="w-[80%] mx-auto" onSubmit={sendEmail}>
-                    <label className="text-slate-200 capitalize font-bold">
+                    <label className="text-slate-400 capitalize font-bold">
                         name
                         <input
                             required
@@ -56,7 +59,7 @@ export const Contact = () => {
                             value={formData.name} 
                             onChange={handleFormData} />
                     </label>
-                    <label className="text-slate-200 capitalize font-bold my-2">
+                    <label className="text-slate-400 capitalize font-bold my-2">
                         email
                         <input
                             required 
@@ -66,7 +69,7 @@ export const Contact = () => {
                             value={formData.email} 
                             onChange={handleFormData}/>
                     </label>
-                    <label className="text-slate-200 capitalize font-bold my-2">
+                    <label className="text-slate-400 capitalize font-bold my-2">
                         subject
                         <input
                             required 
@@ -76,7 +79,7 @@ export const Contact = () => {
                             value={formData.subject} 
                             onChange={handleFormData}/>
                     </label>
-                    <label className="text-slate-200 capitalize font-bold">
+                    <label className="text-slate-400 capitalize font-bold">
                         textarea
                         <textarea 
                             required
@@ -86,16 +89,16 @@ export const Contact = () => {
                             onChange={handleFormData}/>
                     </label>
                     <button 
-                        className="w-full py-2 rounded border-2 text-slate-300 capitalize hover:bg-slate-200 hover:text-[#031926] font-bold "
+                        className="w-full py-2 rounded border-2 text-slate-400 capitalize hover:bg-slate-200 hover:text-[#031926] font-bold "
                         type="submit"    
                     >
                         contact me
                     </button>
                 </form>
             </div>
-            <div className="w-full flex flex-col justify-center order-1 xl:w-[50%]">
+            <div className="w-full flex flex-col justify-center order-1 xl:w-[50%] z-40">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className="text-slate-300 font-bold text-[3rem] capitalize text-center glowing ">{`<contact/>`}</p>
+                <p className={`${!darkMode && 'text-purple-800'} text-slate-300 font-bold text-[3rem] capitalize text-center glowing`}>{`<contact/>`}</p>
                 <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-2xl text-slate-400 font-bold text-center">Did you like my profile?</p>
