@@ -11,7 +11,7 @@ Below you are going to find my social media...
 * [Github](https://github.com/jhonaquejadau)
 * [twitter](https://twitter.com/jaqudev_)
 
-## Technologies
+## Technologies && Features
 
 * React Js
 * Node Js
@@ -19,6 +19,10 @@ Below you are going to find my social media...
 * JavaScript
 * Html 
 * Css
+* Context API
+* Responsive design
+* Clean Code
+* Functional Programming
 
 ## Credits
 
