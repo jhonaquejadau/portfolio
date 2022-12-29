@@ -45,7 +45,7 @@ export const About = () => {
                     {data.skills.map((data, index) => {
                         return (
                             <div key={index} className="flex justify-center items-center rounded-xl border-2 border-purple-800 p-4 z-50 hover:scale-[1.02]">
-                                <img className="w-[50px] h-[50px] " src={data.imgWhite} alt={data.name} />
+                                <img className="w-[70px] h-[70px] " src={data.imgWhite} alt={data.name} />
                             </div>
                         )
                     })}
@@ -55,7 +55,7 @@ export const About = () => {
                     {data.tools.map((data, index) => {
                         return (
                             <div key={index} className="flex justify-center items-center rounded-xl border-2 border-purple-800 p-4 z-50 hover:scale-[1.02]">
-                                <img className="w-[50px] h-[50px] " src={data.imgWhite} alt={data.name} />
+                                <img className="w-[60px] h-[60px] " src={data.imgWhite} alt={data.name} />
                             </div>
                         )
                     })}

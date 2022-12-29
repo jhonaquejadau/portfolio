@@ -18,6 +18,15 @@ import javascriptWhite from "../assets/icons/javascript-white.svg"
 import git from "../assets/icons/git.svg"
 import gitWhite from "../assets/icons/git-white.svg"
 
+import github from "../assets/icons/github.svg"
+import githubWhite from "../assets/icons/github-white.svg"
+
+import linkedin from "../assets/icons/linkedin.svg"
+import linkedinWhite from "../assets/icons/linkedin-white.svg"
+
+import twitter from "../assets/icons/twitter.svg"
+import twitterWhite from "../assets/icons/twitter-white.svg"
+
 import nodejs from "../assets/icons/nodejs.svg"
 import nodejsWhite from "../assets/icons/nodejs-white.svg"
 
@@ -36,10 +45,13 @@ import vscodeWhite from "../assets/icons/vscode-white.svg"
 import figma from "../assets/icons/figma.svg"
 import figmaWhite from "../assets/icons/figma-white.svg"
 
+import mail from "../assets/icons/gmail.svg"
+import mailWhite from "../assets/icons/gmail-white.svg"
+
 import gmail from "../assets/gmail.svg"
-import linkedin from "../assets/linkedin.svg"
-import github from "../assets/github.svg"
-import twitter from "../assets/twitter.svg"
+import linkedin_ from "../assets/linkedin.svg"
+import github_ from "../assets/github.svg"
+import twitter_ from "../assets/twitter.svg"
 
 import pokedex from "../assets/projects/pokedex.png"
 import movies from "../assets/projects/movies.PNG"
@@ -55,14 +67,14 @@ export const data = {
     mainSkill: {name:'react', img:logo},
     skills: [
         {name:'javascript', img: javascript, imgWhite: javascriptWhite},
-        {name:'python', img: python, imgWhite: pythonWhite},
         {name:'nodejs', img: nodejs, imgWhite: nodejsWhite},
         {name:'react', img: react, imgWhite: reactWhite},
         {name:'mongoDB', img: mongodb, imgWhite: mongodbWhite},
         {name:'git', img: git, imgWhite: gitWhite},
         {name:'tailwind', img: tailwind, imgWhite: tailwindWhite},
         {name:'html', img: html, imgWhite: htmlWhite},
-        {name:'css', img: css, imgWhite: cssWhite}
+        {name:'css', img: css, imgWhite: cssWhite},
+        {name:'python', img: python, imgWhite: pythonWhite},
 
     ],
     tools:[
@@ -78,8 +90,16 @@ export const data = {
     ],
     gmail: {name: 'gmail', logo:gmail},
     social: [
-        {name: 'linkedin', logo:linkedin, source: "https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/" },
-        {name: 'github', logo:github, source: "https://github.com/jhonaquejadau"},
-        {name: 'twitter', logo: twitter, source: "https://twitter.com/jaqudev_"}
-    ]
+        {name: 'linkedin', logo:linkedin_, source: "https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/" },
+        {name: 'github', logo:github_, source: "https://github.com/jhonaquejadau"},
+        {name: 'twitter', logo: twitter_, source: "https://twitter.com/jaqudev_"}
+    ],
+    resume: {
+        social:[
+            {name: 'gmail', img: mail, imgWhite: mailWhite, source:"mailto:jhona.quejada@gmail.com"},
+            {name: 'github', img: github, imgWhite: githubWhite, source:"https://github.com/jhonaquejadau"},
+            {name: 'linkedin', img: linkedin, imgWhite: linkedinWhite, source:"https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/"},
+            {name: 'twitter', img: twitter, imgWhite: twitterWhite, source:'"https://twitter.com/jaqudev_"'},
+        ]
+    }
 }

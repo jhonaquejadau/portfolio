@@ -5,7 +5,7 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Skills } from './pages/Skills';
 import { Projects } from './pages/Projects';
-import { Resume } from "./pages/Resume";
+import { CvDeveloper } from "./pages/Resume";
 
 import './App.css';
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills/>} />
-        <Route path="/resume" element={<Resume/>} />
+        <Route path="/resume" element={<CvDeveloper/>} />
       </Routes>
     </div>
   );
