@@ -9,11 +9,11 @@ export const CvDeveloper = () => {
     return (
         <section className="flex justify-center items-center w-full h-full bg-[#080916]">
             <Background/>
-            <div className="flex flex-col items-center mt-[5em] w-[80%] h-full z-40 border-2 text-white">
+            <div className="flex flex-col items-center mt-[5em] w-[80%] h-full z-40 text-white max-[1000px]:w-full">
                 <p className={`${!darkMode && 'text-slate-400 border-slate-300'} text-[3rem] border-b-2 border-white`}>{`<`}My<span className="text-purple-800"> Resume</span>{` />`}</p>
-                <p className={`${!darkMode && 'text-slate-400'} text-[3.5rem] capitalize font-[200] -mb-10 mt-[1em]`}>jhon alexander</p>
-                <p className="text-[5rem] capitalize font-[400] text-purple-800 -mb-4">quejada urrutia</p>
-                <p className={`${!darkMode && 'text-slate-500'} uppercase text-[2rem] text-[#2D3142] font-[800]`}>mechatronic engineer | react js developer</p>
+                <p className={`${!darkMode && 'text-slate-400'} text-[3.5rem] capitalize font-[200] -mb-10 mt-[1em] max-[700px]:text-[2.5rem] max-[700px]:-mb-6`}>jhon alexander</p>
+                <p className="text-[5rem] capitalize font-[400] text-purple-800 -mb-4 max-[700px]:text-[2.75rem] ">quejada urrutia</p>
+                <p className={`${!darkMode && 'text-slate-500'} uppercase text-[2rem] text-center text-[#2D3142] font-[800] max-[700px]:text-[1.25rem] max-[700px]:my-4`}>mechatronic engineer | react js developer</p>
                 <div className="flex flex-row justify-center items-center">
                     {data.resume.social.map(social => {
                         return (
