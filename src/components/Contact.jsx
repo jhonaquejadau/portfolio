@@ -103,7 +103,7 @@ export const Contact = () => {
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-slate-500 text-3xl text-center px-[2em] max-[400px]:text-lg ">{data.interest}</p>
                 <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
-                <div className="flex flex-row justify-center items-center w-full ">
+                <div className="flex flex-row justify-center items-center w-full z-40">
                     <div className="w-[50px] h-[50px] mx-4 hover:scale-[1.1] mt-4">        
                         <a href="mailto:jhona.quejada@gmail.com">
                             <img src={data.gmail.logo} alt={data.gmail.name} />
