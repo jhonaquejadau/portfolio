@@ -39,7 +39,7 @@ export default function Header () {
     return (
         <header className={`${scrollNav ? 'bg-[rgba(0,0,0,0.9)]' : 'bg-transparent'} fixed top-0 z-50 flex flex-row items-center w-full px-[4em] xl:px-[12em]`} >
             <Link to="/">
-                <p onClick={handleScrollUp} className="italic text-[2rem] text-purple-800 font-[900] cursor-pointer uppercase hover:text-white mr-4">{`jq.`}</p>
+                <p onClick={handleScrollUp} className={`${darkMode ? 'text-purple-800 hover:text-white' : 'text-slate-400 hover:text-purple-800'} italic text-[2rem] font-[900] cursor-pointer uppercase mr-4`}>{`jq.`}</p>
             </Link>
             <Switch></Switch>
             
