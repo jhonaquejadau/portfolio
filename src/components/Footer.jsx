@@ -8,7 +8,7 @@ export const Footer = () => {
     const {darkMode} = useContext(DarkModeConsumer);
 
     return (
-        <footer className={`${darkMode ? 'bg-[rgba(0,0,0,0.8)]' : 'bg-[rgba(0,0,0,0.1)]'} absolute w-full flex flex-row justify-center items-center z-40 py-[1em] px-[15em] max-[1000px]:px-[2em] max-[500px]:flex-col `}>
+        <footer className={`${darkMode ? 'bg-[rgba(0,0,0,0.8)]' : 'bg-[rgba(0,0,0,0.1)]'} w-full flex flex-row justify-center items-center relative bottom-0 py-[1em] px-[15em] max-[1000px]:px-[2em] max-[500px]:flex-col `}>
             <p className={`${darkMode ? 'text-white' : 'text-slate-400'} mr-auto max-[500px]:mr-0 max-[500px]:mb-4`}>{`<Design/>`} by <span className="text-purple-800 font-[600]">jaqudev_ 2022</span></p>
             <div className="flex flex-row justify-center items-center gap-4">
                 {data.social.map((social, index) => {

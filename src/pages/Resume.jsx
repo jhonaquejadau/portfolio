@@ -1,15 +1,15 @@
 import { DarkModeConsumer } from "../context/DarkModeContext";
 
+import { useContext } from "react";
 import { Background } from "../components/background/Background";
 import { data } from "../utils/data";
-import { useContext } from "react";
 
 export const CvDeveloper = () => {
     const {darkMode} = useContext(DarkModeConsumer)
     return (
-        <section className="flex justify-center items-center w-full h-full bg-[#080916]">
+        <section className="flex justify-center items-center w-full h-[100vh] bg-[#080916]">
             <Background/>
-            <div className="flex flex-col items-center mt-[5em] w-[80%] h-full z-40 text-white max-[1000px]:w-full">
+            <div className="flex flex-col items-center mt-[5em] w-[80%] h-full z-40 text-white max-[1000px]:w-full ">
                 <p className={`${!darkMode && 'text-slate-400 border-slate-300'} text-[3rem] border-b-2 border-white`}>{`<`}My<span className="text-purple-800"> Resume</span>{` />`}</p>
                 <p className={`${!darkMode && 'text-slate-400'} text-[3.5rem] capitalize font-[200] -mb-10 mt-[1em] max-[700px]:text-[2.5rem] max-[700px]:-mb-6`}>jhon alexander</p>
                 <p className="text-[5rem] capitalize font-[400] text-purple-800 -mb-4 max-[700px]:text-[2.75rem] ">quejada urrutia</p>
