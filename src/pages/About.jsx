@@ -24,7 +24,7 @@ export const About = () => {
                     <p className="italic text-[#2D3142] text-right italic">{`</h1>`}</p>
                     <p className="italic text-[#2D3142] italic">{`<p>`}</p>
                     <p className="text-slate-300"></p>
-                    <p className="w-[80%] mx-auto text-2xl text-slate-400">{data.description}</p>
+                    <p className="w-[80%] mx-auto text-2xl text-slate-400 max-[1000px]:text-justify max-[1000px]:text-xl">{data.description}</p>
                     <p className="italic text-[#2D3142] text-right italic">{`/<p>`}</p>
                     <p className="italic text-[#2D3142] italic">{`<div>`}</p>
                     {

@@ -14,8 +14,8 @@ export const Home = () => {
             <Background />
 
             {/* <BackgroundAnimation/> */}
-            <section className=" flex flex-row justify-center items-center w-full h-[100vh] shadow-xl bg-[rgba(0,0,0,0.3)]">
-                <div className="flex flex-col justify-center text-[#2D3142] w-[60%] h-full z-20">
+            <section className=" flex flex-row justify-center items-center w-full h-[100vh]">
+                <div className={`${darkMode ? 'bg-[rgba(0,0,0,0.5)]' : 'bg-[rgba(0,0,0,0.1)]'} flex flex-col justify-center text-[#2D3142] w-full h-full z-20 px-[10em]`}>
                     <p className="italic text-[#2D3142]">{`<section>`}</p>
                     <p className="italic text-[#2D3142]">{`<p>`}</p>
                     <h1 className={`${!darkMode ? 'text-slate-400' : 'text-[#2D3142]'} text-4xl text-left capitalize glowing max-[700px]:text-3xl`}>hi there, i'm...</h1>

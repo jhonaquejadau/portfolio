@@ -15,7 +15,7 @@ export const CvDeveloper = () => {
                 <p className="text-[5rem] capitalize font-[400] text-purple-800 -mb-4 max-[700px]:text-[2.75rem] ">quejada urrutia</p>
                 <p className={`${!darkMode && 'text-slate-500'} uppercase text-[2rem] text-center text-[#2D3142] font-[800] max-[700px]:text-[1.25rem] max-[700px]:my-4`}>mechatronic engineer | react js developer</p>
                 <div className="flex flex-row justify-center items-center">
-                    {data.resume.social.map(social => {
+                    {data.social.map(social => {
                         return (
                             <div className={`${!darkMode && 'text-slate-500'} flex flex-row justify-center items-center gap-2 capitalize hover:text-purple-800 mx-2`}>
                                 <img className="w-[20px] h-[20px] " src={darkMode ? social.imgWhite : social.img} alt={social.name} />

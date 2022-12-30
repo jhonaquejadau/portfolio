@@ -45,13 +45,9 @@ import vscodeWhite from "../assets/icons/vscode-white.svg"
 import figma from "../assets/icons/figma.svg"
 import figmaWhite from "../assets/icons/figma-white.svg"
 
-import mail from "../assets/icons/gmail.svg"
-import mailWhite from "../assets/icons/gmail-white.svg"
+import gmail from "../assets/icons/gmail.svg"
+import gmailWhite from "../assets/icons/gmail-white.svg"
 
-import gmail from "../assets/gmail.svg"
-import linkedin_ from "../assets/linkedin.svg"
-import github_ from "../assets/github.svg"
-import twitter_ from "../assets/twitter.svg"
 
 import pokedex from "../assets/projects/pokedex.png"
 import movies from "../assets/projects/movies.PNG"
@@ -88,18 +84,10 @@ export const data = {
         { name: 'quizzical game', img: quizzical, source: "https://jhonaquejadau.github.io/quizzical-app/", description:"Quiz game to test your brain, where you can select categories of the questions, and get a result once you end the game.", url:"https://jhonaquejadau.github.io/quizzical-app/", technologies:['Html', 'Css', 'JavaScript', 'Tailwind'], api:{name:"Open Trivia Api", url:"https://opentdb.com/"} },
         { name: 'character game', img: character, source: "https://jhonaquejadau.github.io/CharacterVS/", description:"Wizzard vs Orc game where you can roll a dice to get damage number to attack your oponent. Be the wizzard you always wold be and win the game!!", url:"https://jhonaquejadau.github.io/CharacterVS/", technologies:['Html', 'Css', 'JavaScript', 'Tailwind'], api:{name:"Scrimba Project", url:"https://scrimba.com/learn/frontend"} }
     ],
-    gmail: {name: 'gmail', logo:gmail},
-    social: [
-        {name: 'linkedin', logo:linkedin_, source: "https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/" },
-        {name: 'github', logo:github_, source: "https://github.com/jhonaquejadau"},
-        {name: 'twitter', logo: twitter_, source: "https://twitter.com/jaqudev_"}
-    ],
-    resume: {
-        social:[
-            {name: 'gmail', img: mail, imgWhite: mailWhite, source:"mailto:jhona.quejada@gmail.com"},
-            {name: 'github', img: github, imgWhite: githubWhite, source:"https://github.com/jhonaquejadau"},
-            {name: 'linkedin', img: linkedin, imgWhite: linkedinWhite, source:"https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/"},
-            {name: 'twitter', img: twitter, imgWhite: twitterWhite, source:'"https://twitter.com/jaqudev_"'},
-        ]
-    }
+    social:[
+        {name: 'gmail', img: gmail, imgWhite: gmailWhite, source:"mailto:jhona.quejada@gmail.com"},
+        {name: 'github', img: github, imgWhite: githubWhite, source:"https://github.com/jhonaquejadau"},
+        {name: 'linkedin', img: linkedin, imgWhite: linkedinWhite, source:"https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/"},
+        {name: 'twitter', img: twitter, imgWhite: twitterWhite, source:'"https://twitter.com/jaqudev_"'},
+    ]
 }

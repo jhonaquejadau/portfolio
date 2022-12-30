@@ -1,6 +1,7 @@
 import { Routes, Route  } from "react-router-dom";
 
 import Header from "./components/Header";
+import { Footer } from "./components/Footer";
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Skills } from './pages/Skills';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/skills" element={<Skills/>} />
         <Route path="/resume" element={<CvDeveloper/>} />
       </Routes>
+      <Footer />
     </div>
   );
 }

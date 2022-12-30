@@ -98,7 +98,7 @@ export const Contact = () => {
             </div>
             <div className="w-full flex flex-col justify-center order-1 xl:w-[50%] z-40">
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
-                <p className={`${!darkMode && 'text-purple-800'} text-slate-300 font-bold text-[3rem] capitalize text-center glowing`}>{`<contact/>`}</p>
+                <p className={`${darkMode ? 'text-purple-800' : 'text-slate-600'} font-bold text-[3rem] capitalize text-center glowing`}>{`<contact/>`}</p>
                 <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
                 <p className="text-[#2D3142] italic">{`<p>`}</p>
                 <p className="text-2xl text-slate-400 font-bold text-center">Did you like my profile?</p>
@@ -107,17 +107,12 @@ export const Contact = () => {
                 <p className="text-slate-500 text-3xl text-center px-[2em] max-[400px]:text-lg ">{data.interest}</p>
                 <p className="text-[#2D3142] text-right italic">{`</p>`}</p>
                 <div className="flex flex-row justify-center items-center w-full z-40">
-                    <div className="w-[50px] h-[50px] mx-4 hover:scale-[1.1] mt-4">        
-                        <a href="mailto:jhona.quejada@gmail.com">
-                            <img src={data.gmail.logo} alt={data.gmail.name} />
-                        </a>
-                    </div>
                     {
                         data.social.map((social,index) => {
                             return (
                                 <div key={index} className="flex flex-col justify-center items-center w-[50px] h-[50px] mx-4 hover:scale-[1.1] mt-4">
                                     <a href={social.source} target="_blank" rel="noreferrer">
-                                    <img src={social.logo} alt={social.name} />
+                                    <img src={darkMode ? social.imgWhite : social.img} alt={social.name} />
                                     </a>
                                 </div>
                             )
