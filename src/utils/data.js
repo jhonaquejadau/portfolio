@@ -88,6 +88,6 @@ export const data = {
         {name: 'gmail', img: gmail, imgWhite: gmailWhite, source:"mailto:jhona.quejada@gmail.com"},
         {name: 'github', img: github, imgWhite: githubWhite, source:"https://github.com/jhonaquejadau"},
         {name: 'linkedin', img: linkedin, imgWhite: linkedinWhite, source:"https://www.linkedin.com/in/jhon-alexander-quejada-urrutia-022763230/"},
-        {name: 'twitter', img: twitter, imgWhite: twitterWhite, source:'"https://twitter.com/jaqudev_"'},
+        {name: 'twitter', img: twitter, imgWhite: twitterWhite, source:"https://twitter.com/jaqudev_"},
     ]
 }
