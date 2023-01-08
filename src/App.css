@@ -300,4 +300,42 @@ Style got it from uiverse.io
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
+/*STYLING BUTTON RESUME
+Source: https://uiverse.io/Web-Potato/silent-ape-24
+*/
+.btnCV {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+}
+
+.btnCV span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.btnCV span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.btnCV span:not(hover) {
+  transition: all 1s;
+}
+
+
  

@@ -1,13 +1,18 @@
+import { useContext } from "react";
 import { DarkModeConsumer } from "../context/DarkModeContext";
 
-import { useContext } from "react";
+import {Experience} from "../components/resume/Experience"
+import {Skills} from "../components/resume/Skills"
+import {Studies} from "../components/resume/Studies"
 import { Background } from "../components/background/Background";
+import { DownloadButton } from "../components/resume/DownloadButton";
+
 import { data } from "../utils/data";
 
 export const CvDeveloper = () => {
     const {darkMode} = useContext(DarkModeConsumer)
     return (
-        <section className="flex justify-center items-center w-full h-[100vh] bg-[#080916]">
+        <section className="flex justify-center items-center w-full h-full bg-[#080916]">
             <Background/>
             <div className="flex flex-col items-center mt-[5em] w-[80%] h-full z-40 text-white max-[1000px]:w-full ">
                 <p className={`${!darkMode && 'text-slate-400 border-slate-300'} text-[3rem] border-b-2 border-white`}>{`<`}My<span className="text-purple-800"> Resume</span>{` />`}</p>
@@ -26,16 +31,10 @@ export const CvDeveloper = () => {
                         )
                     })}
                 </div>
-                <div className="text-center text-[1rem] mt-[1em] w-[80%] h-full">
-                    <p className={`${!darkMode && 'text-slate-500 mt-4'} text-[1.75rem] capitalize border-b-2 w-full`}>{`<experience />`}</p>
-                    <p className={`${!darkMode && 'text-slate-500'} font-[700] uppercase text-left mt-4`}>Avidbots Corp.</p>
-                    <ul className={`${!darkMode && 'text-slate-700'} text-justify font-[300]`}>
-                        <li>1. Control and assistance of autonomous cleaning robots located in different market areas, such as shopping malls, stores, factories, and airports around the
-                                world. Attending to customers’s needs to ensure the proper operation of the robots.</li>
-                        <li>2. Analyze, monitor, and document metrics, failures, and issues affecting robot performance to improve robot autonomy. </li>
-                        <li>3. Attending to and solving doubts of the customer about technical failures related to internal parts of the robot that may be affected during the operation process. Providing an efficient solution that allows the robot to continue with its cleaning tasks.</li>
-                    </ul>
-                </div>
+                <Studies/>
+                <Experience/>
+                <Skills/>
+                <DownloadButton/>
             </div>
         </section>
     )
